@@ -1,6 +1,8 @@
 # React Dog Finder
 ## Springboard Software Engineering Career Track unit 41.2.8 exercise
-Assignment (`http://curric.rithmschool.com/springboard/exercises/react-router-patterns/`) did not include starter code, so all code is by Tor Kingdon, except as included in:  
+Assignment `http://curric.rithmschool.com/springboard/exercises/react-router-patterns/`  
+defaultProps written by Colt Steele and/or Rithm School and/or Springboard  
+all other code and tests are by Tor Kingdon, except as included in:  
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
