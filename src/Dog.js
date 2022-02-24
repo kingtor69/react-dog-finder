@@ -11,7 +11,10 @@ const Dog = ({ dogsDataArray }) => {
   return (
     <div className="Dog">
       <h1>{dogData.name}</h1>
-      <img src={`../dog-images/${src}`} />
+      <img 
+        src={`../dog-images/${src}`} 
+        alt={dogData.name}
+      />
       <ul>
         <li>age: {dogData.age}</li>
         <li>facts:</li>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
 import DogList from './DogList';
 import Dog from './Dog';
@@ -16,12 +16,16 @@ const AppRoutes = ({ dogsData }) => {
               src: dog.src
             }
           ))
-        } 
-      />} />
+        } />} 
+      />
       <Route 
         path="/dogs/:name"
         element={<Dog dogsDataArray={dogsData.dogs} />}
       />
+      <Route
+        path="*"
+        element={<Navigate to="/dogs" />}
+      />   
     </Routes>
   );
 };

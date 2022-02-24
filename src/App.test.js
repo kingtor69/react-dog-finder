@@ -10,7 +10,7 @@ it('renders without crashing', () => {
   </MemoryRouter>
 });
 
-it.only('displays dog list', () => {
+it('displays dog list', () => {
   const { getByText } = render(
     <MemoryRouter initialEntries={['/dogs']}>
 q      <App />
@@ -18,10 +18,10 @@ q      <App />
   );
   expect(getByText('We Got Dogs!')).toBeInTheDocument();
   expect(getByText(defaultProps.dogs[0].name)).toBeInTheDocument();
-  expect(getByText(defaultProps.dogs[0].facts[0])).not.toBeInTheDocument();
+  expect(() => {getByText(defaultProps.dogs[0].facts[0])}).toThrow();
 });
 
-it('displays dog data with correct link', () => {
+it.only('displays dog data with correct link', () => {
   const { getByText } = render(
     <MemoryRouter initialEntries={[`/dogs/${defaultProps.dogs[0].src}`]}>
       <App />
