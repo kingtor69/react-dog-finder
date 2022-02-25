@@ -1,4 +1,16 @@
+.Dog {
+	display: block;
+	text-align: left;
+	width: 80vw;
+	padding: 0px 10vw;
+}
+
 .Dog img {
 	display: block;
-	max-width: 90vw;
+	max-width: 70vw;
+	max-height: 60vh;
+}
+
+.Dog ul {
+	list-style-type: none;
 }

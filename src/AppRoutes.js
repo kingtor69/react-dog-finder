@@ -19,7 +19,7 @@ const AppRoutes = ({ dogsData }) => {
         } />} 
       />
       <Route 
-        path="/dogs/:name"
+        path="/dogs/:src"
         element={<Dog dogsDataArray={dogsData.dogs} />}
       />
       <Route

@@ -21,7 +21,7 @@ q      <App />
   expect(() => {getByText(defaultProps.dogs[0].facts[0])}).toThrow();
 });
 
-it.only('displays dog data with correct link', () => {
+it('displays dog data with correct link', () => {
   const { getByText } = render(
     <MemoryRouter initialEntries={[`/dogs/${defaultProps.dogs[0].src}`]}>
       <App />
@@ -37,5 +37,5 @@ it('redirects to dog list with incorrect link', () => {
     </MemoryRouter>
   );
   expect(getByText(defaultProps.dogs[0].name)).toBeInTheDocument();
-  expect(getByText(defaultProps.dogs[0].facts[0])).not.toBeInTheDocument();
+  expect(() => {getByText(defaultProps.dogs[0].facts[0])}).toThrow();
 });

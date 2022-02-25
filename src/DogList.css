@@ -1,3 +1,10 @@
+.DogList {
+	display: block;
+	text-align: left;
+	width: 80vw;
+	padding: 0px 10vw;
+}
+
 .DogList ul {
 	list-style-type: none;
 }
