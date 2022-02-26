@@ -13,18 +13,16 @@ const Dog = ({ dogsDataArray }) => {
       <div className="Dog">
         <h1>{dogData.name}</h1>
         <img 
-          src={`./dog-images/${src}.jpg`}
+          src={`/dog-images/${src}.jpg`}
           alt={dogData.name}
         />
+        <h3>age: {dogData.age}</h3>
+        <h4>facts:</h4>
         <ul>
-          <li>age: {dogData.age}</li>
-          <li>facts:</li>
-          <ul>
-            {dogData.facts.map(fact => (
-              <li>{fact}</li>
-            ))}
+          {dogData.facts.map(fact => (
+            <li>{fact}</li>
+          ))}
           </ul>
-        </ul>
       </div>
     );
   } else {

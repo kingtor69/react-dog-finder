@@ -1,5 +1,17 @@
 # React Dog Finder
 ## Springboard Software Engineering Career Track unit 41.2.8 exercise
+
+### to deploy:
+```
+npm start
+```
+
+### to test:
+```
+npm test
+```
+
+### copyright and such:
 Assignment `http://curric.rithmschool.com/springboard/exercises/react-router-patterns/`  
 defaultProps written by Colt Steele and/or Rithm School and/or Springboard  
 all other code and tests are by Tor Kingdon, except as included in:  
